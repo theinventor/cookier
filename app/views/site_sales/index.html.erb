@@ -1,0 +1,27 @@
+<h1>Listing site_sales</h1>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Start at</th>
+    <th>End at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @site_sales.each do |site_sale| %>
+  <tr>
+    <td><%= site_sale.location %></td>
+    <td><%= site_sale.start_at %></td>
+    <td><%= site_sale.end_at %></td>
+    <td><%= link_to 'Show', site_sale %></td>
+    <td><%= link_to 'Edit', edit_site_sale_path(site_sale) %></td>
+    <td><%= link_to 'Destroy', site_sale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Site sale', new_site_sale_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cookie_id: 1
+  site_sale_id: 1
+  quantity: 1
+  type: 
+
+two:
+  cookie_id: 1
+  site_sale_id: 1
+  quantity: 1
+  type: 

@@ -1,0 +1,3 @@
+class SiteEndCount < CookieCount
+
+end

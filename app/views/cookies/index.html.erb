@@ -1,0 +1,23 @@
+<h1>Listing cookies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cookies.each do |cooky| %>
+  <tr>
+    <td><%= cooky.name %></td>
+    <td><%= link_to 'Show', cooky %></td>
+    <td><%= link_to 'Edit', edit_cooky_path(cooky) %></td>
+    <td><%= link_to 'Destroy', cooky, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cookie', new_cooky_path %>

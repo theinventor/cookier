@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Location:</b>
+  <%= @site_sale.location %>
+</p>
+
+<p>
+  <b>Start at:</b>
+  <%= @site_sale.start_at %>
+</p>
+
+<p>
+  <b>End at:</b>
+  <%= @site_sale.end_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_site_sale_path(@site_sale) %> |
+<%= link_to 'Back', site_sales_path %>
